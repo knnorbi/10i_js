@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guest Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guestbook</h1>
+    <label for="ratingNumber">Rating</label>
+    <input type="number" id="ratingNumber" min="1" max="5" value="5"><br>
+    <label for="ratingText">Text:</label>
+    <input type="text" id="ratingText"><br>
+    <button onclick="saveRating()">Save</button>
+    <h2>Ratings</h2>
+    <input type="range" min="1" max="5" value="5" id="filterNumber">
+    <button onclick="displayRatings()">Display</button>
+    <div id="ratings"></div>
+    <script src="script.js"></script>
+</body>
+</html>

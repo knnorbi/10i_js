@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Forms</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="https://knnorbi.ddns.net/test/post.php" method="post" onsubmit="return validate()">
         <label for="nameInput" id="nameLabel">Name:</label>
         <input type="text" id="nameInput" name="name"><br>
-        <span class="hint" id="nameHint">A név nem lehet üres!</span><br>
         <label for="ageInput" id="ageLabel">Age:</label>
         <input type="number" id="ageInput" name="age" value="20"><br>
-        <span class="hint" id="ageHint">A kor nem lehet negatív vagy túl sok.</span><br>
-        <input type="checkbox" id="agree"><label for="agree">Elfogadom a feltételeket.</label><br>
-        <span class="hint" id="agreeHint">El kell fogadni a feltételeket!</span><br>
         <input type="submit">
     </form>
     <script src="script.js"></script>
